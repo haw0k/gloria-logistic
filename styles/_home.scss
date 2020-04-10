@@ -1,0 +1,234 @@
+$stone-color: rgba(242, 242, 242, 0.9);
+.home {
+  color: $home-text;
+  background-color: $home-bg;
+  font-size: 16px;
+  padding-top: $gutter*2;
+}
+
+.section {
+
+  h2, h3 {
+    margin-bottom: $gutter;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    margin-top: $gutter*2;
+  }
+
+  h4 {
+    margin-bottom: 0;
+  }
+
+  &--white {
+    padding-top: $gutter*2;
+  }
+
+  &--stone {
+    position: relative;
+    z-index: 1;
+    background-color: $dark-bgc;
+    color: $stone-color;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.3;
+      background-image: url("/jpg/stone-big.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  }
+
+  &--fixing {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    color: black;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.2;
+      background-image: url("/jpg/fixing-big.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      // background-attachment: fixed;
+    }
+  }
+
+  &--business {
+    position: relative;
+    z-index: 1;
+    background-color: $blue;
+    color: $white;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.5;
+      background-image: url("/jpg/architecture.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  }
+}
+
+.gallery {
+  width: 100%;
+  display: grid;
+  row-gap: $gutter;
+  grid-template-columns: repeat(3, 110px);
+  justify-content: space-between;
+
+  &__item {
+    object-fit: cover;
+    border: 1px solid $stone-color;
+    height: 110px;
+    position: relative;
+    cursor: pointer;
+    color: $dark-hover;
+    transition: transform, border-color $delay $afunc;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #333;
+      opacity: 0;
+      z-index: 1;
+      transition: background-color, opacity $delay $afunc;
+    }
+
+    &:hover {
+      border-color: $dark-hover;
+      transform: scale(1.02);
+
+      .ui-icon {
+        opacity: 1;
+      }
+
+      &::before {
+        opacity: 0.5;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .ui-icon {
+      position: absolute;
+      color: $dark-hover;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      z-index: 2;
+      transition: opacity $delay $afunc;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__zoom {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--fixing {
+    grid-template-columns: repeat(6, 110px);
+
+    .gallery__item {
+      border: 1px solid $home-text;
+
+      &:hover {
+        border-color: $dark-hover;
+      }
+    }
+  }
+}
+
+.card {
+  background-color: $bg-light;
+  color: $light-text;
+  margin: 0 $gutter;
+  padding: $gutter*2 $gutter*3;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color $delay $afunc;
+
+  &:hover {
+    background-color: $white;
+
+    img {
+      transform: scale(1.01);
+    }
+  }
+  
+  img {
+    transition: transform $delay $afunc;
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 3px;
+  transition: color, background-color $delay $afunc;
+
+  &:hover, &:active {
+    text-decoration: none;
+  }
+  
+  &--big {
+    font-size: 16px;
+    line-height: 50px;
+    width: 100%;
+  }
+
+  &--blue {
+    background-color: $blue;
+    color: #e9e9e9;
+
+    &:hover, &:active {
+      color: $white;
+      color: lighten($dark-hover, 25%);
+      background-color: lighten($blue, 15%)
+    }
+  }
+}

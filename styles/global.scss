@@ -1,0 +1,71 @@
+@import "config";
+
+body {
+  font-family: $default-font;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h2, h3, h4 {
+  font-weight: 600;
+}
+
+.section {
+  padding-bottom: 60px;
+}
+
+.text {
+
+  &--plgutter {
+    padding-left: $gutter;
+  }
+
+  &--prgutter {
+    padding-right: $gutter;
+  }
+
+  p {
+    margin-bottom: $gutter;
+  }
+}
+
+// a {
+//   transition: translate $delay $afunc;
+//   border-color: transparent;
+
+//   &:hover {
+//     transform: translateY(1px);
+//     border-color: $link-hover;
+//   }
+// }
+
+@import "modal.scss";
+@import "header.scss";
+@import "home.scss";
+@import "media.scss";

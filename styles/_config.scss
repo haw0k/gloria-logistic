@@ -1,0 +1,22 @@
+$default-font: 'Open Sans', sans-serif;
+// $accent: #10318b;
+$blue: #0E3FC5;
+$bg-light: #f2f2f2;
+$text-header: #606060;
+$home-text: #707070;
+$home-bg: #fff;
+$link-hover: black;
+$dark-bgc: rgba(25, 25, 25, 1);
+$dark-text: rgb(212, 212, 212);
+$dark-hover: rgb(241, 192, 58);
+$light-text: #2B2B2B;
+
+$afunc: ease-in-out;
+$delay: 0.30s;
+
+$grid-gutter-width: 15px;
+$gutter: $grid-gutter-width;
+
+@import "../styles/bootstrap/bootstrap-reboot.scss";
+// @import "../styles/bootstrap/mixins/_breakpoints.scss";
+@import "../styles/bootstrap/bootstrap-grid.scss";

@@ -1,0 +1,116 @@
+.modal {
+  position: absolute;
+  background: $dark-bgc;
+  overflow: auto;
+  outline: none;
+  padding: 40px 40px 0 0;
+  max-height: 95vh;
+  z-index: 20;
+  box-shadow: 0 0 $gutter;
+
+  &__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: $dark-text;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: $dark-bgc;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 0;
+    transition: background-color $delay $afunc;
+    
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+      color: $white;
+      background-color: rgba($red, 0.7);
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    // background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(100, 100, 100, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    &--after-open {
+      opacity: 1;
+      transition: opacity $delay $afunc;
+      // background-color: rgba(0, 0, 0, 0.75) !important;
+    }
+  
+    &--before-close {
+      opacity: 0;
+    }
+
+  }
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+
+  #__next {
+    filter: blur(2px);
+  }
+}
+
+/* .ReactModal__Body--open {
+  overflow-y: hidden;
+}
+
+.ReactModal__Overlay {
+  perspective: 600;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &--after-open {
+    opacity: 1;
+    transition: opacity 150ms ease-out;
+    background-color: rgba(0, 0, 0, 0.75) !important;
+  }
+
+  &--before-close {
+    opacity: 0;
+  }
+}
+
+
+.ReactModal__Content {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  // transform: scale(0.5) rotateX(-30deg);
+  border-radius: 0 !important;
+
+  &--after-open {
+    transform: scale(1) rotateX(0deg);
+    transition: all 150ms ease-in;
+  }
+
+  &--before-close {
+    transform: scale(0.5) rotateX(30deg);
+    transition: all 150ms ease-in;
+  }
+
+  .modal-dialog {
+    border: none;
+    background-color: transparent;
+  }
+}
+ */
