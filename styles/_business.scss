@@ -4,7 +4,7 @@
   z-index: 1;
   background-color: $blue;
   color: $white;
-  // min-height: calc(100vh - 66px - 58px);
+  min-height: calc(100vh - 66px);
 
   &::before {
     content: "";
