@@ -1,4 +1,3 @@
-// import styles from './Home.module.scss';
 import GalleryItem from './galleryitem/GalleryItem';
 import Link from 'next/link';
 
@@ -44,9 +43,6 @@ const Home = () => {
                 </p>
               </div>
             </div>
-              {/* <div className={styles.bordered}>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque similique consequuntur id numquam? Reprehenderit praesentium dolores blanditiis fugit consequuntur facilis molestias facere nulla, ducimus incidunt neque, expedita, quod id.</p>
-              </div> */}
           </div>
         </div>
       </section>
@@ -174,7 +170,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
     </main>
   )
 };

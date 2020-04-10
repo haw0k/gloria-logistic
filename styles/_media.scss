@@ -65,8 +65,19 @@
       margin: $gutter 0;
     }
   }
+
+  .footer__copyright, .footer__address {
+    margin-bottom: $gutter;
+  }
 }
 
+@media only screen and (max-width : 575px) {
+  .footer__copyright,
+  .footer__address,
+  .footer__email {
+    padding: 0 $gutter;
+  }
+}
 @media only screen and (max-width : 480px) {
   .gallery {
     grid-template-columns: repeat(3, 90px);

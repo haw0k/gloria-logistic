@@ -1,0 +1,22 @@
+.footer {
+  color: darken($dark-text, 20%);
+  background-color: $dark-bgc;
+  padding: $gutter 0;
+  font-size: 12px;
+
+  address, p {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $dark-text;
+    border-bottom: 1px solid transparent;
+    transition: color,border-color $delay $afunc;
+    
+    &:hover, &:active {
+      text-decoration: none;
+      color: $dark-hover;
+      border-color: $dark-hover;
+    }
+  }
+}
