@@ -4,17 +4,17 @@ const Footer = () => (
   <footer className="footer">
     <div className="container">
       <div className="row">
-        <div className="col-md-3">
+        <div className="col-lg-4 col-md-3">
           <div className="footer__copyright">
             <p>
               © Gloria Logistic, 2020
             </p>
             <p>
-              Все права защищены
+              Создано <a href="https://t.me/haw0k" target="_blank">Кириллом Злачевским</a>
             </p>
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-lg-5 col-md-6">
           <div className="footer__address">
             <p>
               Адрес:
@@ -24,7 +24,7 @@ const Footer = () => (
             </address>
           </div>
         </div>
-        <div className="col-md-3 d-flex md-justify-content-end">
+        <div className="col-md-3 d-flex justify-content-md-end">
           <div className="footer__email">
             <p>e-mail:</p>
             <a href="mailto: glorialogistic.s.l@gmail.com">glorialogistic.s.l@gmail.com</a>

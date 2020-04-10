@@ -1,0 +1,23 @@
+.section--business {
+  padding-top: $gutter*4;
+  position: relative;
+  z-index: 1;
+  background-color: $blue;
+  color: $white;
+  // min-height: calc(100vh - 66px - 58px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    background-image: url("/jpg/architecture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}

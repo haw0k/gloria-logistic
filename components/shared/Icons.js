@@ -60,11 +60,11 @@ export default class Icons extends React.Component {
       hamburger: () => (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          height="32px"
+          height="32"
           id="Layer_1"
           // style="enable-background:new 0 0 32 32;"
           viewBox="0 0 32 32"
-          width="32px"
+          width="32"
           xmlSpace="preserve"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           fill="currentColor"

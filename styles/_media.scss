@@ -78,6 +78,7 @@
     padding: 0 $gutter;
   }
 }
+
 @media only screen and (max-width : 480px) {
   .gallery {
     grid-template-columns: repeat(3, 90px);

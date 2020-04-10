@@ -13,9 +13,6 @@
               0 4px 4px rgba(0,0,0,0.15), 
               0 8px 8px rgba(0,0,0,0.15),
               0 16px 16px rgba(0,0,0,0.15);
-// light theme
-  // color: $text-header;
-// dark theme
   color: $dark-text;
   background-color: $dark-bgc;
 }
@@ -55,7 +52,6 @@
 
 .lang-menu__link,
 .main-menu__link {
-  // color: $text-header;
   color: $dark-text;
   border-bottom: 3px solid transparent;
   transition: border-color, transform $delay $afunc;
@@ -63,13 +59,11 @@
   display: inline-block;
 
   &:hover {
-    // border-color: $link-hover;
     border-color: $dark-hover;
     padding-bottom: 19px;
   }
 
   &--active {
-    // border-bottom: 3px solid $text-header;
     border-bottom: 3px solid $dark-text;
   }
 }
@@ -77,7 +71,6 @@
 .main-header__logo,
 .main-menu__link,
 .lang-menu__link {
-  // color: $text-header;
   color: $dark-text;
   transition: color $delay $afunc;
 
@@ -153,18 +146,9 @@
   padding: 0 0 30px 0;
   border-bottom-width: 5px;
   transition: border-color $delay $afunc;
-  // color: $dark-text;
-  // border-color: $dark-text;
 
   &:hover {
-    // color: $dark-hover;
     padding: 0 0 29px 0;
     transform: translateY(1px);
-    // border-color: $dark-hover;
-
   }
 }
-
-// .lang-menu__link--active:hover {
-//   padding: 0 0 29px 0;
-// }
