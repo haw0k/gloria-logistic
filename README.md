@@ -1,4 +1,4 @@
-### Next.js 9.3 layout template
+### Gloria logistic website
 run the development server:
 
 ```bash
