@@ -34,7 +34,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="mobile-menu__item">
-              <Link href="#projects">
+              <Link href="/business">
                 <a className="mobile-menu__link">Бизнес-проекты</a>
               </Link>
             </li>
@@ -71,17 +71,17 @@ const Header = () => {
             <nav className="main-menu">
               <ul className="main-menu__list">
                 <li className="main-menu__item">
-                  <Link href="#about" scroll={false}>
+                  <Link href="/#about" scroll={false}>
                     <a className="main-menu__link">О компании</a>
                   </Link>
                 </li>
                 <li className="main-menu__item">
-                  <Link href="#services" scroll={false}>
+                  <Link href="/#services" scroll={false}>
                     <a className="main-menu__link">Услуги</a>
                   </Link>
                 </li>
                 <li className="main-menu__item">
-                  <Link href="#projects">
+                  <Link href="/business">
                     <a className="main-menu__link">Бизнес-проекты</a>
                   </Link>
                 </li>

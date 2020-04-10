@@ -5,9 +5,9 @@ const Business = () => (
     <div className="container">
       <div className="row">
         <div className="col-12">
-          <h2 className="section__title">
+          <h1 className="section__title">
             Бизнес-проекты
-          </h2>
+          </h1>
         </div>
       </div>
       <div className="row">

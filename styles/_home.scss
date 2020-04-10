@@ -8,12 +8,19 @@
 
 .section {
 
-  h2, h3 {
-    margin-bottom: $gutter;
+  h1, h2, h3 {
     text-transform: uppercase;
     text-align: center;
     width: 100%;
     margin-top: $gutter*2;
+  }
+
+  h1 {
+    margin-bottom: $gutter*2;
+  }
+
+  h2, h3 {
+    margin-bottom: $gutter;
   }
 
   h4 {
