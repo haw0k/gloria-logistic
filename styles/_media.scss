@@ -12,6 +12,10 @@
       grid-template-columns: repeat(6, 90px);
     }
   }
+
+  .card__container {
+    grid-template-columns: repeat(3, 300px);
+  }
 }
 
 @media only screen and (max-width : 992px) {
@@ -19,12 +23,9 @@
     margin: 6px 0;
   }
 
-  .section__white .text {
+  .section--white .text {
     margin-top: $gutter*2;
-
-    &--plgutter {
-      padding-left: 0;
-    }
+    padding-left: 0;
   }
 
   .gallery {
@@ -40,13 +41,21 @@
     }
   }
 
-  .card {
-    margin: 0 $gutter/3;
-    padding: $gutter*2 $gutter*2;
+  .card__container {
+    grid-template-columns: repeat(2, 300px);
+    row-gap: $gutter*4;
   }
 }
 
 @media only screen and (max-width : 767px) {
+
+  .section--stone, .section--fixing {
+    .text {
+      margin-bottom: $gutter*2;
+      padding-right: 0;
+    }
+  }
+
   .gallery {
     grid-template-columns: repeat(5, 90px);
     row-gap: $gutter;
@@ -56,10 +65,16 @@
     }
   }
 
+  .card__container {
+    grid-template-columns: 300px;
+    row-gap: $gutter*3;
+    justify-content: center;
+  }
+
   .card {
     height: auto;
     width: 300px;
-    margin: 0 auto $gutter*2 auto;
+    margin: 0;
 
     h4 {
       margin: $gutter 0;

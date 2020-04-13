@@ -24,12 +24,12 @@ const Header = () => {
         <nav className="mobile-menu" onClick={closeModal}>
           <ul className="mobile-menu__list">
             <li className="mobile-menu__item">
-              <Link href="#about">
+              <Link href="/#about">
                 <a className="mobile-menu__link">О компании</a>
               </Link>
             </li>
             <li className="mobile-menu__item">
-              <Link href="#services">
+              <Link href="/#services">
                 <a className="mobile-menu__link">Услуги</a>
               </Link>
             </li>

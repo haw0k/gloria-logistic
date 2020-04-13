@@ -42,14 +42,6 @@ h2, h3, h4 {
 
 .text {
 
-  &--plgutter {
-    padding-left: $gutter;
-  }
-
-  &--prgutter {
-    padding-right: $gutter;
-  }
-
   p {
     margin-bottom: $gutter;
   }

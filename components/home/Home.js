@@ -33,7 +33,7 @@ const Home = () => {
               <img className="responsive-img" src="jpg/slider.jpg" alt="Sketch"/>
             </div>
             <div className="col-lg-4">
-              <div className="text text--plgutter">
+              <div className="text">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -56,7 +56,7 @@ const Home = () => {
           </div>
           <div className="row">
             <div className="col-lg-8 col-md-6">
-              <div className="text text--prgutter">
+              <div className="text">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -89,7 +89,7 @@ const Home = () => {
           </div>
           <div className="row">
             <div className="col-lg-4 col-md-6">
-              <div className="text text--prgutter">
+              <div className="text">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
