@@ -1,10 +1,8 @@
 .section--business {
-  // padding-top: $gutter*2;
   position: relative;
   z-index: 1;
   background-color: $blue;
   color: $white;
-  min-height: calc(100vh - 66px);
 
   &::before {
     content: "";

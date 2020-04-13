@@ -47,6 +47,10 @@ h2, h3, h4 {
   }
 }
 
+main {
+  flex-grow: 1;
+}
+
 // a {
 //   transition: translate $delay $afunc;
 //   border-color: transparent;

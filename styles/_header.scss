@@ -3,9 +3,9 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 58px;
+  bottom: 60px;
   z-index: 10;
-  height: 58px;
+  height: 60px;
   display: flex;
   justify-content: center;
   box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
@@ -30,9 +30,7 @@
 .main-menu__item,
 .lang-menu__item {
   list-style: none;
-  display: inline-block;
-  font-weight: 600;
-  line-height: 1;
+  display: inline-flex;
   text-transform: uppercase;
 
   &:last-of-type {
@@ -55,12 +53,14 @@
   color: $dark-text;
   border-bottom: 3px solid transparent;
   transition: border-color, transform $delay $afunc;
-  padding: 20px 0;
-  display: inline-block;
+  display: inline-flex;
+  font-weight: 600;
+  line-height: 57px;
+  height: 60px;
 
   &:hover {
     border-color: $dark-hover;
-    padding-bottom: 19px;
+    height: 59px;
   }
 
   &--active {
@@ -143,12 +143,10 @@
 }
 
 .lang-menu__link--mobile {
-  padding: 0 0 30px 0;
   border-bottom-width: 5px;
   transition: border-color $delay $afunc;
 
   &:hover {
-    padding: 0 0 29px 0;
-    transform: translateY(1px);
+    height: 59px;
   }
 }
