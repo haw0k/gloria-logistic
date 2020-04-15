@@ -84,6 +84,11 @@
   .footer__copyright, .footer__address {
     margin-bottom: $gutter;
   }
+
+  .image-gallery-slide-wrapper {
+    width: 450px;
+    height: 450px;
+  }
 }
 
 @media only screen and (max-width : 575px) {
@@ -91,6 +96,11 @@
   .footer__address,
   .footer__email {
     padding: 0 $gutter;
+  }
+
+  .image-gallery-slide-wrapper {
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -103,8 +113,16 @@
       height: 90px;
     }
   }
+
+  .image-gallery-slide-wrapper {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 @media only screen and (max-width : 320px) {
-
+  .image-gallery-slide-wrapper {
+    width: 200px;
+    height: 200px;
+  }
 }

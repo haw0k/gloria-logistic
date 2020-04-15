@@ -1,4 +1,4 @@
-import GalleryItem from "./galleryitem/GalleryItem";
+// import GalleryItem from "./galleryitem/GalleryItem";
 import Carousel from "../carousel/Carousel";
 import Icons from "../shared/Icons";
 
@@ -22,20 +22,29 @@ const Home = () => {
     thumbnail: `/jpg/gallery/stone/${i}-small.jpg`,
   }));
 
+  const fixingGallery = galleryArray(23).map((i) => ({
+    original: `/jpg/gallery/fixing/${i}.jpg`,
+    thumbnail: `/jpg/gallery/fixing/${i}-small.jpg`,
+  }));
+
+
   // function onStoneGalleryItemClick(i) {}
   // console.log(stoneGallery);
   const [modalStoneIsOpen, setIsOpenStoneModal] = React.useState(false);
   const [galleryStoneIndex, setGalleryStoneIndex] = React.useState(0);
 
+  const [modalFixingIsOpen, setIsOpenFixingModal] = React.useState(false);
+  const [galleryFixingIndex, setGalleryFixingIndex] = React.useState(0);
+
   function showStoneModal(j) {
     setIsOpenStoneModal(true);
     setGalleryStoneIndex(j);
-    console.log('click j=', j);
   }
 
-  // function closeStoneModal() {
-  //   setIsOpenStoneModal(false);
-  // }
+  function showFixingModal(j) {
+    setIsOpenFixingModal(true);
+    setGalleryFixingIndex(j);
+  }
 
   return (
     <main className="home">
@@ -44,6 +53,12 @@ const Home = () => {
         images={stoneGallery}
         isOpen={modalStoneIsOpen}
         onClose={() => setIsOpenStoneModal(false)}
+      />
+      <Carousel
+        slideActive={galleryFixingIndex}
+        images={fixingGallery}
+        isOpen={modalFixingIsOpen}
+        onClose={() => setIsOpenFixingModal(false)}
       />
       <section className="section section--white" id="about">
         <div className="container">
@@ -173,11 +188,24 @@ const Home = () => {
             </div>
             <div className="col-lg-8 col-md-6">
               <nav className="gallery gallery--fixing">
-                {galleryArray(23).map((i) => (
-                  <GalleryItem
+                {galleryArray(23).map((i, j) => (
+                  // <GalleryItem
+                  //   key={i}
+                  //   imgUrl={`jpg/gallery/fixing/${i}-small.jpg`}
+                  // />
+                  <div
                     key={i}
-                    imgUrl={`jpg/gallery/fixing/${i}-small.jpg`}
-                  />
+                    className="gallery__item"
+                    onClick={() => showFixingModal(j)}
+                  >
+                    <div className="gallery__zoom">
+                      <Icons name="zoomIn" />
+                    </div>
+                    <img
+                      src={`jpg/gallery/fixing/${i}-small.jpg`}
+                      alt="gallery image"
+                    />
+                  </div>
                 ))}
               </nav>
             </div>

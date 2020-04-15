@@ -9,9 +9,10 @@
   box-shadow: 0 0 $gutter;
 
   &--gallery {
-    padding: 40px 0 0 0;
-    max-width: 90vw;
-    max-height: 90vh;
+    padding: 35px;
+    overflow: hidden;
+    // max-width: unset;
+    // max-height: unset;
   }
 
   &__close {

@@ -4,7 +4,7 @@ const projectsData = [
     title: "Завод по производству тарной дощечки",
     img: "/jpg/wood.jpg",
     text: `
-        <h4>Наши логистические проекты.</h4>
+        <h4>Наш завод.</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "9.3.4",
+    "now": "^18.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-image-gallery": "^1.0.7",

@@ -35,7 +35,7 @@
   &--stone {
     position: relative;
     z-index: 1;
-    background-color: $dark-bgc;
+    background-color: lighten($dark-bgc, 10%);
     color: $stone-color;
 
     &::before {
@@ -169,4 +169,17 @@
       }
     }
   }
+}
+
+.gallery__wrapper {
+  // margin: 0 auto;
+  // width: 65%;
+  // height: 50%;
+  // transition: all 1s ease;
+  // margin: 50px 0;
+  // height: 300px;
+}
+.image-gallery-slide-wrapper {
+  width: 650px;
+  height: 650px;
 }

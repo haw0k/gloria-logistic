@@ -12,10 +12,17 @@ const Carousel = ({ slideActive = 0, images, isOpen, onClose }) => (
     <button className="modal__close" onClick={onClose}>
       ×
     </button>
-    <ImageGallery
-      startIndex={slideActive}
-      items={images}
-    />
+    <div className="gallery__wrapper">
+      <ImageGallery
+        startIndex={slideActive}
+        items={images}
+        // thumbnailPosition="left"
+        showBullets={true}
+        showThumbnails={false}
+        lazyLoad={true}
+        showFullscreenButton={false}
+      />
+    </div>
   </ReactModal>
 );
 
