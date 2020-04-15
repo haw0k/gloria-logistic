@@ -6,3 +6,5 @@ npm run dev
 # or
 yarn dev
 ```
+
+# Preview: https://gloria-logistic.haw0k.now.sh
