@@ -81,7 +81,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="main-menu__item">
-                  <Link href="/business">
+                  <Link href="/business/">
                     <a className="main-menu__link">Бизнес-проекты</a>
                   </Link>
                 </li>
