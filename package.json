@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "next": "9.3.4",
-    "nuka-carousel": "^4.6.6",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-image-gallery": "^1.0.7",
