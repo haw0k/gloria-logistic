@@ -40,17 +40,17 @@ const Header = () => {
             </li>
             <ul className="lang-menu__list lang-menu__list--mobile">
               <li className="lang-menu__item lang-menu__item--mobile">
-                <Link href="#">
+                <Link href="/en/">
                   <a className="lang-menu__link lang-menu__link--mobile">En</a>
                 </Link>
               </li>
               <li className="lang-menu__item lang-menu__item--mobile">
-                <Link href="#">
+                <Link href="/es/">
                   <a className="lang-menu__link lang-menu__link--mobile">Es</a>
                 </Link>
               </li>
               <li className="lang-menu__item lang-menu__item--mobile">
-                <Link href="#">
+                <Link href="/ru/">
                   <a className="lang-menu__link lang-menu__link--mobile lang-menu__link--active">Ру</a>
                 </Link>
               </li>
@@ -92,17 +92,17 @@ const Header = () => {
             <nav className="lang-menu">
               <ul className="lang-menu__list">
                 <li className="lang-menu__item">
-                  <Link href="#">
+                  <Link href="/en/">
                     <a className="lang-menu__link">En</a>
                   </Link>
                 </li>
                 <li className="lang-menu__item">
-                  <Link href="#">
+                  <Link href="/es/">
                     <a className="lang-menu__link">Es</a>
                   </Link>
                 </li>
                 <li className="lang-menu__item">
-                  <Link href="#">
+                  <Link href="/ru/">
                     <a className="lang-menu__link lang-menu__link--active">
                       Ру
                     </a>

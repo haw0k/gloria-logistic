@@ -97,7 +97,7 @@ const Project = ({ title }) => {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-8">
+          <div className="col-md-4">
             { projectDetails &&
               <img
                 className="responsive-img"
@@ -105,7 +105,7 @@ const Project = ({ title }) => {
                 alt={projectDetails.title}
               />}
           </div>
-          <div className="col-lg-4">
+          <div className="col-md-8">
             { projectDetails &&
               <div
                 className="text"
