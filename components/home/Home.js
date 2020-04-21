@@ -91,7 +91,9 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h3 className="section__subtitle">Обработка камня</h3>
+              <h3 className="section__subtitle">
+                {t('common:homeStoneTitle')}
+              </h3>
             </div>
           </div>
           <div className="row">

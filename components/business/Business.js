@@ -20,7 +20,7 @@ const Business = () => {
               <div className="card">
                 <img src="/jpg/wood.jpg" alt="wood" className="responsive-img" />
                 <h4 className="card__title">
-                {t('common:businessProject1')}
+                {t('common:businessProjectTitle1')}
                 </h4>
                 <Link href="/projects/[id]" as={`/projects/${"factory"}`}>
                   <a className="btn btn--big btn--blue">
@@ -31,7 +31,7 @@ const Business = () => {
               <div className="card">
                 <img src="/jpg/building-square.jpg" alt="building" className="responsive-img" />
                 <h4 className="card__title">
-                  {t('common:businessProject2')}
+                  {t('common:businessProjectTitle2')}
                 </h4>
                 <Link href="/projects/[id]" as={`/projects/${"property"}`}>
                   <a className="btn btn--big btn--blue">
@@ -42,7 +42,7 @@ const Business = () => {
               <div className="card">
                 <img src="/jpg/railways.jpg" alt="railways" className="responsive-img" />
                 <h4 className="card__title">
-                  {t('common:businessProject2')}
+                  {t('common:businessProjectTitle3')}
                 </h4>
                 <Link href="/projects/[id]" as={`/projects/${"logistic"}`}>
                   <a className="btn btn--big btn--blue">
