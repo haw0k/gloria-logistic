@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "next": "9.3.4",
     "next-translate": "^0.15.0",
     "now": "^18.0.0",

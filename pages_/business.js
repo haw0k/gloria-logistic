@@ -8,7 +8,7 @@ const Index = () => {
   const { t } = useTranslation();
   return (
     <>
-      <HTMLHeader title="Gloria Logistic" description={t('common:businessProjects')} />
+      <HTMLHeader title="Gloria Logistic" description={t('common:businessTitle')} />
       <Layout>
         <Business />
       </Layout>

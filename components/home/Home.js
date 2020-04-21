@@ -1,6 +1,6 @@
-// import GalleryItem from "./galleryitem/GalleryItem";
 import Carousel from "../carousel/Carousel";
 import Icons from "../shared/Icons";
+import useTranslation from 'next-translate/useTranslation';
 
 const galleryArray = (max) => {
   const Array = [];
@@ -17,6 +17,8 @@ const galleryArray = (max) => {
 };
 
 const Home = () => {
+  const { t } = useTranslation();
+
   const stoneGallery = galleryArray(12).map((i) => ({
     original: `/jpg/gallery/stone/${i}.jpg`,
     thumbnail: `/jpg/gallery/stone/${i}-small.jpg`,
@@ -28,8 +30,6 @@ const Home = () => {
   }));
 
 
-  // function onStoneGalleryItemClick(i) {}
-  // console.log(stoneGallery);
   const [modalStoneIsOpen, setIsOpenStoneModal] = React.useState(false);
   const [galleryStoneIndex, setGalleryStoneIndex] = React.useState(0);
 
@@ -64,36 +64,23 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h2 className="section__title">О компании</h2>
+              <h2 className="section__title">
+                {t('common:homeAboutTitle')}
+              </h2>
             </div>
           </div>
           <div className="row">
             <div className="col-lg-8">
               <img
                 className="responsive-img"
-                src="jpg/slider.jpg"
+                src="/jpg/slider.jpg"
                 alt="Sketch"
               />
             </div>
             <div className="col-lg-4">
               <div className="text">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <p>
-                  Lacinia at quis risus sed vulputate odio ut enim blandit.
-                  Turpis nunc eget lorem dolor sed viverra ipsum. Amet nulla
-                  facilisi morbi tempus iaculis urna. Eros in cursus turpis
-                  massa tincidunt. Interdum velit laoreet id donec ultrices
-                  tincidunt arcu non. Risus quis varius quam quisque id diam
-                  vel. In egestas erat imperdiet sed euismod nisi porta. Erat
-                  pellentesque adipiscing commodo elit at imperdiet dui
-                  accumsan. Varius duis at consectetur lorem donec massa.
-                  Posuere sollicitudin aliquam ultrices sagittis orci a.
-                  Tristique sollicitudin nibh sit amet commodo nulla facilisi.
-                  Eu augue ut lectus arcu bibendum. Ornare aenean euismod
-                  elementum nisi quis. Pharetra sit amet aliquam id diam.
+                  {t('common:homeAboutText')}
                 </p>
               </div>
             </div>
@@ -111,32 +98,13 @@ const Home = () => {
             <div className="col-lg-8 col-md-6">
               <div className="text">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <p>
-                  Lacinia at quis risus sed vulputate odio ut enim blandit.
-                  Turpis nunc eget lorem dolor sed viverra ipsum. Amet nulla
-                  facilisi morbi tempus iaculis urna. Eros in cursus turpis
-                  massa tincidunt. Interdum velit laoreet id donec ultrices
-                  tincidunt arcu non. Risus quis varius quam quisque id diam
-                  vel. In egestas erat imperdiet sed euismod nisi porta. Erat
-                  pellentesque adipiscing commodo elit at imperdiet dui
-                  accumsan. Varius duis at consectetur lorem donec massa.
-                  Posuere sollicitudin aliquam ultrices sagittis orci a.
-                  Tristique sollicitudin nibh sit amet commodo nulla facilisi.
-                  Eu augue ut lectus arcu bibendum. Ornare aenean euismod
-                  elementum nisi quis. Pharetra sit amet aliquam id diam.
+                  {t('common:homeStoneText')}
                 </p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
               <nav className="gallery gallery--stone">
                 {galleryArray(12).map((i,j) => (
-                  // <GalleryItem
-                  //   key={i}
-                  //   imgUrl={`jpg/gallery/stone/${i}-small.jpg`}
-                  // />
                   <div
                     key={i}
                     className="gallery__item"
@@ -146,7 +114,7 @@ const Home = () => {
                       <Icons name="zoomIn" />
                     </div>
                     <img
-                      src={`jpg/gallery/stone/${i}-small.jpg`}
+                      src={`/jpg/gallery/stone/${i}-small.jpg`}
                       alt="gallery image"
                     />
                   </div>
@@ -160,39 +128,22 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h3 className="section__subtitle">Строительные работы</h3>
+              <h3 className="section__subtitle">
+                {t('common:homeFixingTitle')}
+              </h3>
             </div>
           </div>
           <div className="row">
             <div className="col-lg-4 col-md-6">
               <div className="text">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <p>
-                  Lacinia at quis risus sed vulputate odio ut enim blandit.
-                  Turpis nunc eget lorem dolor sed viverra ipsum. Amet nulla
-                  facilisi morbi tempus iaculis urna. Eros in cursus turpis
-                  massa tincidunt. Interdum velit laoreet id donec ultrices
-                  tincidunt arcu non. Risus quis varius quam quisque id diam
-                  vel. In egestas erat imperdiet sed euismod nisi porta. Erat
-                  pellentesque adipiscing commodo elit at imperdiet dui
-                  accumsan. Varius duis at consectetur lorem donec massa.
-                  Posuere sollicitudin aliquam ultrices sagittis orci a.
-                  Tristique sollicitudin nibh sit amet commodo nulla facilisi.
-                  Eu augue ut lectus arcu bibendum. Ornare aenean euismod
-                  elementum nisi quis. Pharetra sit amet aliquam id diam.
+                  {t('common:homeFixingText')}
                 </p>
               </div>
             </div>
             <div className="col-lg-8 col-md-6">
               <nav className="gallery gallery--fixing">
                 {galleryArray(23).map((i, j) => (
-                  // <GalleryItem
-                  //   key={i}
-                  //   imgUrl={`jpg/gallery/fixing/${i}-small.jpg`}
-                  // />
                   <div
                     key={i}
                     className="gallery__item"
@@ -202,7 +153,7 @@ const Home = () => {
                       <Icons name="zoomIn" />
                     </div>
                     <img
-                      src={`jpg/gallery/fixing/${i}-small.jpg`}
+                      src={`/jpg/gallery/fixing/${i}-small.jpg`}
                       alt="gallery image"
                     />
                   </div>

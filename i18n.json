@@ -2,6 +2,7 @@
   "allLanguages": ["en", "es", "ru"],
   "defaultLanguage": "ru",
   "pages": {
-    "*": ["common"]
+    "*": ["common"],
+    "/business": ["common"]
   }
 }

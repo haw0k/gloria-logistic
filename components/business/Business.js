@@ -10,7 +10,7 @@ const Business = () => {
         <div className="row">
           <div className="col-12">
             <h1 className="section__title">
-              {t('common:businessProjects')}
+              {t('common:businessTitle')}
             </h1>
           </div>
         </div>
@@ -20,33 +20,33 @@ const Business = () => {
               <div className="card">
                 <img src="/jpg/wood.jpg" alt="wood" className="responsive-img" />
                 <h4 className="card__title">
-                  Завод по производству тарной дощечки
+                {t('common:businessProject1')}
                 </h4>
                 <Link href="/projects/[id]" as={`/projects/${"factory"}`}>
                   <a className="btn btn--big btn--blue">
-                    Подробнее
+                  {t('common:businessMore')}
                   </a>
                 </Link>
               </div>
               <div className="card">
                 <img src="/jpg/building-square.jpg" alt="building" className="responsive-img" />
                 <h4 className="card__title">
-                  Операции с недвижимостью
+                  {t('common:businessProject2')}
                 </h4>
                 <Link href="/projects/[id]" as={`/projects/${"property"}`}>
                   <a className="btn btn--big btn--blue">
-                    Подробнее
+                    {t('common:businessMore')}
                   </a>
                 </Link>
               </div>
               <div className="card">
                 <img src="/jpg/railways.jpg" alt="railways" className="responsive-img" />
                 <h4 className="card__title">
-                  Логистические проекты
+                  {t('common:businessProject2')}
                 </h4>
                 <Link href="/projects/[id]" as={`/projects/${"logistic"}`}>
                   <a className="btn btn--big btn--blue">
-                    Подробнее
+                    {t('common:businessMore')}
                   </a>
                 </Link>
               </div>
