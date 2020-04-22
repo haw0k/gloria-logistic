@@ -1,4 +1,9 @@
 ### Gloria logistic website
+build static site:
+```
+yarn build
+yarn export
+```
 run the development server:
 
 ```bash
