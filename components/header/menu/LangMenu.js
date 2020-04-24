@@ -7,6 +7,7 @@ const LangMenu = ({ isMobile }) => {
   const { allLanguages } = i18Config;
   const { lang } = useTranslation();
 
+  console.log('lang=',lang);
   return (
     <ul
       className={cs("lang-menu__list", isMobile && "lang-menu__list--mobile")}
@@ -25,7 +26,7 @@ const LangMenu = ({ isMobile }) => {
                 className={cs(
                   "lang-menu__link",
                   isMobile && "lang-menu__link--mobile",
-                  lang === { item } && "lang-menu__link--active"
+                  lang === item && "lang-menu__link--active"
                 )}
               >
                 {item}
