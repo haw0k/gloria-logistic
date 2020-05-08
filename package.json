@@ -10,14 +10,14 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "next": "9.3.5",
-    "next-translate": "^0.15.0",
-    "now": "^18.0.0",
+    "next": "9.3.6",
+    "next-translate": "^0.15.1",
+    "now": "^19.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-image-gallery": "^1.0.7",
     "react-modal": "^3.11.2",
-    "sass": "^1.26.3"
+    "sass": "^1.26.5"
   },
   "devDependencies": {
     "prettier": "^2.0.5"
