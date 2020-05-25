@@ -5,10 +5,10 @@ import useTranslation from 'next-translate/useTranslation';
 
 
 const Index = () => {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   return (
     <>
-      <HTMLHeader title="Gloria Logistic" description={t('common:description')} />
+      <HTMLHeader title="Gloria Logistic" description={t('common:description')} lang={lang} />
       <Layout>
         <Home />
       </Layout>
