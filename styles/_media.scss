@@ -48,6 +48,10 @@
 }
 
 @media only screen and (max-width : 767px) {
+  .advatages {
+    grid-template-columns: 1fr;
+    row-gap: $gutter*2;
+  }
 
   .section--stone, .section--fixing {
     .text {

@@ -1,4 +1,3 @@
-
 .home {
   color: $home-text;
   background-color: $home-bg;
@@ -8,19 +7,21 @@
 }
 
 .section {
-
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     text-transform: uppercase;
     text-align: center;
     width: 100%;
-    margin-top: $gutter*2;
+    margin-top: $gutter * 2;
   }
 
   h1 {
-    margin-bottom: $gutter*2;
+    margin-bottom: $gutter * 2;
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     margin-bottom: $gutter;
   }
 
@@ -30,6 +31,11 @@
     .text {
       padding-left: $gutter;
     }
+  }
+
+  &--advatages {
+    background-color:#043c57;
+    color: $dark-text;
   }
 
   &--stone {
@@ -85,6 +91,26 @@
   }
 }
 
+.advatages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: $gutter;
+}
+
+.advatage {
+  text-align: center;
+  text-transform: lowercase;
+
+  p {
+    margin: 0 $gutter;
+  }
+}
+
+.advantage__icon {
+  margin-bottom: $gutter;
+  color: white;
+}
+
 .gallery {
   width: 100%;
   display: grid;
@@ -102,7 +128,7 @@
     transition: transform, border-color $delay $afunc;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -174,4 +200,20 @@
 .image-gallery-slide-wrapper {
   width: 650px;
   height: 650px;
+}
+
+.list {
+  list-style-image: url("/svg/tick.svg");
+
+  li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}
+
+.fullheight {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

@@ -72,7 +72,7 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-8">
               <img
-                className="responsive-img"
+                className="fullheight"
                 src="/jpg/slider.jpg"
                 alt="Sketch"
               />
@@ -80,53 +80,55 @@ const Home = () => {
             <div className="col-lg-4">
               <div className="text">
                 <p>
-                  {t('common:homeAboutText')}
+                  {t('common:homeAboutText1')}
+                </p>
+                <p>
+                  {t('common:homeAboutText2')}
+                </p>
+                <p>
+                  {t('common:homeAboutText3')}
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="section section--stone" id="services">
+      <section className="section section--advatages">
         <div className="container">
           <div className="row">
             <div className="col-12">
               <h3 className="section__subtitle">
-                {t('common:homeStoneTitle')}
+                {t('common:advatageTitle')}
               </h3>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-8 col-md-6">
-              <div className="text">
-                <p>
-                  {t('common:homeStoneText')}
-                </p>
+            <div className="col-12">
+              <div className="advatages">
+                <article className="advatage">
+                  <img src="/svg/help.svg" alt="help icon" className="advantage__icon"/>
+                  <p>{t('common:advatageItem1')}</p>
+                </article>
+                <article className="advatage">
+                <img src="/svg/consulting.svg" alt="consulting icon" className="advantage__icon"/>
+                  <p>{t('common:advatageItem2')}</p>
+                </article>
+                <article className="advatage">
+                  <img src="/svg/wallet.svg" alt="wallet icon" className="advantage__icon"/>
+                  <p>{t('common:advatageItem3')}</p>
+                </article>
+                <article className="advatage">
+                  <img src="/svg/turnkey.svg" alt="key icon" className="advantage__icon"/>
+                  <p>{t('common:advatageItem4')}</p>
+                </article>
+                <article className="advatage">
+                  <img src="/svg/tool.svg" alt="tool icon" className="advantage__icon"/>
+                  <p>{t('common:advatageItem5')}</p>
+                </article>
               </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <nav className="gallery gallery--stone">
-                {galleryArray(12).map((i,j) => (
-                  <div
-                    key={i}
-                    className="gallery__item"
-                    onClick={() => showStoneModal(j)}
-                  >
-                    <div className="gallery__zoom">
-                      <Icons name="zoomIn" />
-                    </div>
-                    <img
-                      src={`/jpg/gallery/stone/${i}-small.jpg`}
-                      alt="gallery image"
-                    />
-                  </div>
-                ))}
-              </nav>
             </div>
           </div>
         </div>
       </section>
-      <section className="section section--fixing">
+      <section className="section section--fixing" id="fixing">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -135,12 +137,19 @@ const Home = () => {
               </h3>
             </div>
           </div>
-          <div className="row">
+          <div className="row d-lg-flex align-items-center">
             <div className="col-lg-4 col-md-6">
               <div className="text">
-                <p>
-                  {t('common:homeFixingText')}
-                </p>
+                <ul className="list">
+                  <li>{t('common:homeFixing1')}</li>
+                  <li>{t('common:homeFixing2')}</li>
+                  <li>{t('common:homeFixing3')}</li>
+                  <li>{t('common:homeFixing4')}</li>
+                  <li>{t('common:homeFixing5')}</li>
+                  <li>{t('common:homeFixing6')}</li>
+                  <li>{t('common:homeFixing7')}</li>
+                  <li>{t('common:homeFixing8')}</li>
+                </ul>
               </div>
             </div>
             <div className="col-lg-8 col-md-6">
@@ -156,6 +165,42 @@ const Home = () => {
                     </div>
                     <img
                       src={`/jpg/gallery/fixing/${i}-small.jpg`}
+                      alt="gallery image"
+                    />
+                  </div>
+                ))}
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section section--stone" id="stone">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section__subtitle">
+                {t('common:homeStoneTitle')}
+              </h3>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-8 col-md-6">
+              <div className="text">
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <nav className="gallery gallery--stone">
+                {galleryArray(12).map((i,j) => (
+                  <div
+                    key={i}
+                    className="gallery__item"
+                    onClick={() => showStoneModal(j)}
+                  >
+                    <div className="gallery__zoom">
+                      <Icons name="zoomIn" />
+                    </div>
+                    <img
+                      src={`/jpg/gallery/stone/${i}-small.jpg`}
                       alt="gallery image"
                     />
                   </div>
