@@ -50,7 +50,7 @@
 @media only screen and (max-width : 767px) {
   .advatages {
     grid-template-columns: 1fr;
-    row-gap: $gutter*2;
+    row-gap: $gutter*3;
   }
 
   .section--stone, .section--fixing {
