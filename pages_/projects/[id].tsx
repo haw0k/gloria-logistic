@@ -5,13 +5,9 @@ import Project from "../../components/project/Project";
 
 export default function Projects() {
   const router = useRouter();
-
   return (
     <>
-      <HTMLHeader
-        title='Gloria Logistic'
-        description={router.query.id}
-      />
+      <HTMLHeader title='Gloria Logistic' description={router.query.id} />
       <Layout>
         <Project title={router.query.id} />
       </Layout>

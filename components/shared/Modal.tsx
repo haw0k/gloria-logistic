@@ -9,7 +9,6 @@ export default class Modal extends Component<IModalProps> {
     return (
       <ReactModal
         isOpen={isOpen}
-        isClose={onClose}
         onRequestClose={onClose}
         className='modal'
         closeTimeoutMS={150}
