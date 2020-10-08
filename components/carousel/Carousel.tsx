@@ -1,21 +1,27 @@
+import { FC } from "react";
 import ReactModal from "react-modal";
 import ImageGallery from "react-image-gallery";
+import { ICarouselProps } from "./../../interfaces/ICarouselProps";
 
-const Carousel = ({ slideActive = 0, images, isOpen, onClose }) => (
+const Carousel: FC<ICarouselProps> = ({
+  slideActive = 0,
+  images,
+  isOpen,
+  onClose,
+}) => (
   <ReactModal
     isOpen={isOpen}
     onRequestClose={onClose}
     ariaHideApp={false}
-    className="modal modal--gallery"
-    overlayClassName="modal__overlay"
+    className='modal modal--gallery'
+    overlayClassName='modal__overlay'
   >
-    <button className="modal__close" onClick={onClose}>
+    <button className='modal__close' onClick={onClose}>
       ×
     </button>
     <ImageGallery
       startIndex={slideActive}
       items={images}
-      // thumbnailPosition="left"
       showBullets={true}
       showThumbnails={false}
       lazyLoad={true}

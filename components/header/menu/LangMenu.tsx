@@ -1,9 +1,11 @@
+import { FC } from "react";
 import Link from "next-translate/Link";
 import cs from "classnames";
 import i18Config from "../../../i18n.json";
 import useTranslation from "next-translate/useTranslation";
+import { ILangMenuProps } from './../../../interfaces/ILangMenu';
 
-const LangMenu = ({ isMobile }) => {
+const LangMenu: FC<ILangMenuProps> = ({ isMobile }) => {
   const { allLanguages } = i18Config;
   const { lang } = useTranslation();
 

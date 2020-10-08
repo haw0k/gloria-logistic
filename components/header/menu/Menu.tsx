@@ -1,8 +1,10 @@
+import { FC } from "react";
 import cs from "classnames";
 import Link from "next-translate/Link";
 import useTranslation from "next-translate/useTranslation";
+import { IMenuProps } from './../../../interfaces/IMenuProps';
 
-const Menu = ({ isMobile, children }) => {
+const Menu: FC<IMenuProps> = ({ isMobile, children }) => {
   const { t } = useTranslation();
 
   return (

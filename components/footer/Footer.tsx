@@ -1,6 +1,7 @@
+import { FC } from "react";
 import useTranslation from "next-translate/useTranslation";
 
-const Footer = () => {
+const Footer: FC = () => {
   const { t } = useTranslation();
 
   return (
