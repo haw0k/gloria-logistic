@@ -9,19 +9,19 @@ const Project: FC<IProjectProps> = ({ title }) => {
     {
       url: "factory",
       title: t("common:businessProjectTitle1"),
-      img: "/jpg/wood.jpg",
+      img: "/webp/wood.webp",
       text: t("common:businessProjectText1"),
     },
     {
       url: "property",
       title: t("common:businessProjectTitle2"),
-      img: "/jpg/building-square.jpg",
+      img: "/webp/building-square.webp",
       text: t("common:businessProjectText2"),
     },
     {
       url: "logistic",
       title: t("common:businessProjectTitle3"),
-      img: "/jpg/railways.jpg",
+      img: "/webp/railways.webp",
       text: t("common:businessProjectText3"),
     },
   ];

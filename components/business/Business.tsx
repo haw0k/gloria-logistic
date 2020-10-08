@@ -18,7 +18,7 @@ const Business: FC = () => {
             <div className='card__container'>
               <div className='card'>
                 <img
-                  src='/jpg/wood.jpg'
+                  src='/webp/wood.webp'
                   alt='wood'
                   className='responsive-img'
                 />
@@ -33,7 +33,7 @@ const Business: FC = () => {
               </div>
               <div className='card'>
                 <img
-                  src='/jpg/building-square.jpg'
+                  src='/webp/building-square.webp'
                   alt='building'
                   className='responsive-img'
                 />
@@ -48,7 +48,7 @@ const Business: FC = () => {
               </div>
               <div className='card'>
                 <img
-                  src='/jpg/railways.jpg'
+                  src='/webp/railways.webp'
                   alt='railways'
                   className='responsive-img'
                 />

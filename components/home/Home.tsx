@@ -21,13 +21,13 @@ const Home: FC = () => {
   const { t } = useTranslation();
 
   const stoneGallery = galleryArray(12).map((i: number) => ({
-    original: `/jpg/gallery/stone/${i}.jpg`,
-    thumbnail: `/jpg/gallery/stone/${i}-small.jpg`,
+    original: `/webp/gallery/stone/${i}.webp`,
+    thumbnail: `/webp/gallery/stone/${i}-small.webp`,
   }));
 
   const fixingGallery = galleryArray(23).map((i: number) => ({
-    original: `/jpg/gallery/fixing/${i}.jpg`,
-    thumbnail: `/jpg/gallery/fixing/${i}-small.jpg`,
+    original: `/webp/gallery/fixing/${i}.webp`,
+    thumbnail: `/webp/gallery/fixing/${i}-small.webp`,
   }));
 
   const [modalStoneIsOpen, setIsOpenStoneModal] = useState<boolean>(false);
@@ -69,7 +69,7 @@ const Home: FC = () => {
           </div>
           <div className='row'>
             <div className='col-lg-8'>
-              <img className='fullheight' src='/jpg/slider.jpg' alt='Sketch' />
+              <img className='fullheight' src='/webp/slider.webp' alt='Sketch' />
             </div>
             <div className='col-lg-4'>
               <div className='text'>
@@ -170,7 +170,7 @@ const Home: FC = () => {
                       <Icons name='zoomIn' />
                     </div>
                     <img
-                      src={`/jpg/gallery/fixing/${i}-small.jpg`}
+                      src={`/webp/gallery/fixing/${i}-small.webp`}
                       alt='gallery image'
                     />
                   </div>
@@ -205,7 +205,7 @@ const Home: FC = () => {
                       <Icons name='zoomIn' />
                     </div>
                     <img
-                      src={`/jpg/gallery/stone/${i}-small.jpg`}
+                      src={`/webp/gallery/stone/${i}-small.webp`}
                       alt='gallery image'
                     />
                   </div>
