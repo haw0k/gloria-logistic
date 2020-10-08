@@ -1,6 +1,6 @@
 {
   "allLanguages": ["en", "es", "ru"],
-  "defaultLanguage": "ru",
+  "defaultLanguage": "es",
   "pages": {
     "*": ["common"],
     "/business": ["common"]
