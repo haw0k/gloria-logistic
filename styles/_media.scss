@@ -1,5 +1,11 @@
 /*==========  Desktop First Method  ==========*/
 @media only screen and (max-width : 1200px) {
+
+  .main-menu__item,
+  .lang-menu__item {
+    font-size: 14px;
+  }
+
   .gallery {
     grid-template-columns: repeat(3, 90px);
     row-gap: $gutter;
@@ -21,6 +27,10 @@
 @media only screen and (max-width : 992px) {
   .main-header__logo {
     margin: 6px 0;
+  }
+
+  .lang-menu__item {
+    font-size: 16px;
   }
 
   .section--white .text {
