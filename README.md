@@ -1,15 +1,14 @@
-### Gloria logistic website
-build static site:
+[Gloria logistic website](https://www.google.com)
+build project:
 ```
+yarn
 yarn build
 yarn export
 ```
 run the development server:
 
 ```bash
-npm run dev
+npm install && npm run dev
 # or
-yarn dev
+yarn && yarn dev
 ```
-
-#### Preview: https://gloria-logistic.haw0k.now.sh
