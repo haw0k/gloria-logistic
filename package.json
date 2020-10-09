@@ -11,7 +11,7 @@
   "dependencies": {
     "@types/node": "^14.11.8",
     "classnames": "^2.2.6",
-    "next": "9.5.3",
+    "next": "9.5.4",
     "next-translate": "^0.17.2",
     "now": "^20.1.1",
     "react": "16.13.1",
