@@ -1,5 +1,5 @@
 import { useState, FC } from "react";
-import Link from "next-translate/Link";
+import Link from "next/link";
 import Icons from "../shared/Icons";
 import ReactModal from "react-modal";
 import useTranslation from "next-translate/useTranslation";
@@ -35,7 +35,7 @@ const Header: FC = () => {
       <div className='container'>
         <div className='row align-items-center'>
           <div className='col-lg-2 col-md-6 col-6'>
-            <Link href='/' lang={lang}>
+            <Link href='/' locale={lang}>
               <a className='main-header__logo'>
                 <Icons name='logo' />
               </a>

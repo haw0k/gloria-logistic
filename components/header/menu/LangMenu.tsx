@@ -1,20 +1,20 @@
 import { FC } from "react";
-import Link from "next-translate/Link";
+import Link from "next/link";
 import cs from "classnames";
 import i18Config from "../../../i18n.json";
 import useTranslation from "next-translate/useTranslation";
 import { ILangMenuProps } from './../../../interfaces/ILangMenu';
 
 const LangMenu: FC<ILangMenuProps> = ({ isMobile }) => {
-  const { allLanguages } = i18Config;
+  const { locales } = i18Config;
   const { lang } = useTranslation();
 
   return (
     <ul
       className={cs("lang-menu__list", isMobile && "lang-menu__list--mobile")}
     >
-      {allLanguages &&
-        allLanguages.map((item, index) => (
+      {locales &&
+        locales.map((item, index) => (
           <li
             className={cs(
               "lang-menu__item",
@@ -22,7 +22,7 @@ const LangMenu: FC<ILangMenuProps> = ({ isMobile }) => {
             )}
             key={index}
           >
-            <Link href="/" lang={item}>
+            <Link href="/" locale={item}>
               <a
                 className={cs(
                   "lang-menu__link",

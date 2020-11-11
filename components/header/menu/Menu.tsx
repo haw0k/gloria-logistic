@@ -1,6 +1,6 @@
 import { FC } from "react";
 import cs from "classnames";
-import Link from "next-translate/Link";
+import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 import { IMenuProps } from './../../../interfaces/IMenuProps';
 
